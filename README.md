@@ -104,7 +104,7 @@ CUDA 11.0+ (for GPU acceleration)
 ### Quick Setup
 ```bash
 # Clone repository
-git clone [repository-url]
+git clone https://github.com/shayaanshaikh10/Fire-Detection-YOLO
 cd Fire-Detection-YOLO
 
 # Install dependencies

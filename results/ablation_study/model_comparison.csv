@@ -1,0 +1,3 @@
+model,mAP50,mAP50-95,precision,recall,parameters,inference_time_ms
+YOLOv8n,0.869,0.492,0.837,0.809,3157200,12.3
+YOLOv5s,0.891,0.508,0.856,0.829,9153152,16.8

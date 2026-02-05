@@ -48,6 +48,8 @@ This research implements a controlled ablation study comparing two YOLO architec
 - **Data Augmentation**: YOLO default augmentations
 - **Optimization**: AdamW optimizer with cosine scheduling
 
+**All experiments are reproducible using the provided scripts and dataset configuration.**
+
 ## 📈 Results Summary
 
 ### Performance Metrics
@@ -107,9 +109,27 @@ cd Fire-Detection-YOLO
 
 # Install dependencies
 pip install -r requirements.txt
+```
 
-# Download dataset (if not included)
-# Dataset should be placed in data/fire_dataset/
+### Dataset Setup
+1. Download the dataset from [Roboflow Fire Detection](https://universe.roboflow.com/leilamegdiche/fire-detection-rsqrr/dataset/1)
+2. Extract to `data/fire_dataset/`
+3. Verify structure matches: `data/fire_dataset/{train,valid,test}/{images,labels}/`
+
+**Expected directory structure:**
+```
+data/
+└── fire_dataset/
+    ├── data.yaml
+    ├── train/
+    │   ├── images/
+    │   └── labels/
+    ├── valid/
+    │   ├── images/
+    │   └── labels/
+    └── test/
+        ├── images/
+        └── labels/
 ```
 
 ### Dependencies

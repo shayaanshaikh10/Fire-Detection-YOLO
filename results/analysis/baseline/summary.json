@@ -1,0 +1,9 @@
+{
+  "epochs_recorded": 51,
+  "best_epoch": 49,
+  "best_precision": 0.8383,
+  "best_recall": 0.84433,
+  "best_map50": 0.87949,
+  "best_map50_95": 0.49103,
+  "final_cls_loss": 0.78992
+}

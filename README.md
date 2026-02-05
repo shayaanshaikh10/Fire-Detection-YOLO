@@ -1,4 +1,4 @@
-# YOLO Fire Detection - Research Project
+# YOLO Fire Detection – Architectural Comparison & Real-Time Research Project
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-green)](https://ultralytics.com/)

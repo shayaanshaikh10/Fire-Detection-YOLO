@@ -1,4 +1,4 @@
-# YOLO Fire Detection - Research Project
+# YOLO Fire Detection – Architectural Comparison & Real-Time Research Project
 
 [![Python](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/)
 [![YOLOv8](https://img.shields.io/badge/YOLOv8-Ultralytics-green)](https://ultralytics.com/)
@@ -76,7 +76,22 @@ The ablation study reveals performance trade-offs between model complexity and a
 #### Performance Analysis:
 [Detailed comparison charts and analysis in `/results/ablation_study/`]
 
-## 🛠️ Installation & Setup
+## � Research Report Download
+
+### 📄 Technical Documentation
+Download the comprehensive research report and documentation:
+
+- **[📊 Technical Report PDF](report/YOLO_Fire_Detection_Technical_Report.pdf)** - Complete research analysis and methodology
+- **[📈 Results Summary](results/ablation_study/README.md)** - Ablation study findings and performance metrics  
+- **[💾 Raw Data](results/ablation_study/model_comparison.csv)** - Quantitative comparison data for further analysis
+- **[🔬 Research Summary](results/ablation_study/research_summary.json)** - Structured experimental results and insights
+
+### 🎯 Quick Access
+- **Key Findings**: YOLOv5s achieves 89.1% mAP50 vs YOLOv8n's 86.9% at 2.9x computational cost
+- **Real-time Performance**: Both models achieve <20ms inference for deployment readiness
+- **Production Ready**: Complete codebase with training, evaluation, and inference scripts
+
+## �🛠️ Installation & Setup
 
 ### Prerequisites
 ```bash

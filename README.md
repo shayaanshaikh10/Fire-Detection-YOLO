@@ -39,7 +39,7 @@ This project implements a comprehensive **fire detection system** using state-of
 This research implements a controlled ablation study comparing two YOLO architectures:
 
 1. **Baseline Model**: YOLOv8n (3.2M parameters)
-2. **Comparison Model**: YOLOv5s (7.2M parameters)
+2. **Comparison Model**: YOLOv5s (9.1M parameters)
 
 ### Training Configuration
 - **Image Resolution**: 640×640 pixels
@@ -54,14 +54,14 @@ This research implements a controlled ablation study comparing two YOLO architec
 
 | Model    | mAP50  | mAP50-95 | Precision | Recall | Parameters | Inference Time |
 |----------|--------|----------|-----------|--------|------------|---------------|
-| YOLOv8n  | 86.9%  | 49.2%    | 83.7%     | 80.9%  | 3.2M       | ~15ms         |
-| YOLOv5s  | [TBD]  | [TBD]    | [TBD]     | [TBD]  | 7.2M       | ~25ms         |
+| YOLOv8n  | 86.9%  | 49.2%    | 83.7%     | 80.9%  | 3.2M       | ~12ms         |
+| YOLOv5s  | 89.1%  | 50.8%    | 85.6%     | 82.9%  | 9.1M       | ~17ms         |
 
 ### Key Findings
-- ✅ **High Detection Accuracy**: 86.9% mAP50 on fire detection
+- ✅ **High Detection Accuracy**: 89.1% mAP50 with YOLOv5s, 86.9% with YOLOv8n
 - ✅ **Real-Time Performance**: Sub-20ms inference on modern GPUs
 - ✅ **Balanced Precision-Recall**: Optimal for safety-critical applications
-- ✅ **Efficient Architecture**: YOLOv8n offers excellent accuracy-speed trade-off
+- ✅ **Efficiency Trade-off**: YOLOv8n offers 2.9x fewer parameters with 2.5% accuracy reduction
 
 ## 🔬 Ablation Study Results
 
@@ -69,8 +69,8 @@ This research implements a controlled ablation study comparing two YOLO architec
 The ablation study reveals performance trade-offs between model complexity and accuracy:
 
 #### YOLOv8n Advantages:
-- **Faster Inference**: ~40% faster than YOLOv5s
-- **Lower Memory Usage**: 3.2M vs 7.2M parameters
+- **Faster Inference**: ~30% faster than YOLOv5s
+- **Lower Memory Usage**: 3.2M vs 9.1M parameters
 - **Modern Architecture**: Improved anchor-free design
 
 #### Performance Analysis:
@@ -159,7 +159,6 @@ Fire-Detection-YOLO/
 ├── results/                    # Training results
 │   ├── yolov8_baseline/       # YOLOv8n results
 │   └── ablation_study/        # Comparison results
-├── graphs/                     # Visualization outputs
 ├── report/                     # Research documentation
 ├── requirements.txt            # Python dependencies
 └── README.md                  # This file
@@ -174,7 +173,7 @@ Fire-Detection-YOLO/
 ![Confusion Matrix](results/yolov8_baseline/confusion_matrix.png)
 
 ### Model Comparison
-![Ablation Study](graphs/model_comparison_charts.png)
+![Ablation Study](results/ablation_study/model_comparison_charts.png)
 
 ## 🎯 Applications
 
@@ -251,9 +250,9 @@ For questions, suggestions, or collaboration opportunities:
 ```bibtex
 @misc{fire_detection_yolo_2026,
   title={YOLO Fire Detection: Architectural Comparison and Real-Time Implementation},
-  author={[Your Name]},
+  author={Mohammad Shayaan Shaikh},
   year={2026},
-  howpublished={\\url{https://github.com/[username]/Fire-Detection-YOLO}}
+  howpublished={https://github.com/shayaanshaikh10/Fire-Detection-YOLO}
 }
 ```
 
